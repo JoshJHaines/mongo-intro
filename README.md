@@ -64,7 +64,7 @@ var mongoose = require('mongoose');
 ```
 2. Then under users Router add
 ``` javascript
-mongoose.connect("mongodb://localhost:27017/express-mongodb-intro",{
+mongoose.connect("mongodb://localhost:27017/'database-name'",{
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
