@@ -29,7 +29,7 @@ First you will need to initialize/create the application. Create the directory w
 6. Run ``` touch .gitignore``` 
    1. Add ```/node_modules``` to the file.
 7. Connect to or init git repo
-8. Run ``touch README.md``` as needed/desired
+8. Run ```touch README.md``` as needed/desired
 
 
 ## Create Git Repo
