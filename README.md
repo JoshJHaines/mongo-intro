@@ -20,7 +20,7 @@ Express generator will pre-make the server, folders and routes structure for you
 ### In Terminal
 First you will need to initialize/create the application. Create the directory where you would like this to live. Once you are in your new directory: 
 
-1. install express generator 'npm i express-generator -g'  
+1. install express generator ```'npm i express-generator -g'```  
    1. this sets it globally, only need to run once on your computer
 2. Start your project 'express "project-name-here" --view=ejs'
 3. cd into the project directory
