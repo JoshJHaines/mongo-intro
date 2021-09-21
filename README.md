@@ -1,4 +1,4 @@
-# Express Generator Intro
+# Mongo DB Intro
 
 
 
@@ -23,10 +23,12 @@ First you will need to initialize/create the application. Create the directory w
 1. install express generator 'npm i express-generator -g'  
    1. this sets it globally, only need to run once on your computer
 2. Start your project 'express "project-name-here" --view=ejs'
-3. Run  ‘npm init’
-4. Run 'npm i mongoose'
-5. Create a .gitignore file. Add /node_modules
-6. Connect to or init git repo
+3. cd into the project directory
+4. Run  ‘npm init’
+5. Run 'npm i mongoose'
+6. Create a .gitignore file. Add /node_modules
+7. Connect to or init git repo
+8. Create README.md as needed/desired
 
 
 ## Create Git Repo
