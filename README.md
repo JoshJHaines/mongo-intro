@@ -52,12 +52,14 @@ First you will need to initialize/create the application. Create the directory w
 
 
 ## Delete Items
-Edit your ejs files to display 'HTML' dynamically
+Remove items that we will not use. These items were added by the Express Generator.
 
 ### App.js
 1. Comment or delete out lines 3,12,13,14,20
    
 ## Add Mongo DB
+Now we are going to connect our application to a database. 
+### App.js
 1. Under logger = morgan... add
 ``` javascript
 var mongoose = require('mongoose');
