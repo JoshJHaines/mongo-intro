@@ -1,6 +1,6 @@
 # Mongo DB Intro
 
-
+Install Mongo following steps at [MongoDB](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/). Use Brew to install and start Mongo DB.
 
 ## Requirements
 
@@ -16,6 +16,8 @@
 
 ## Overview
 Express generator will pre-make the server, folders and routes structure for you.
+
+
 
 ### In Terminal
 First you will need to initialize/create the application. Create the directory where you would like this to live. Once you are in your new directory: 
