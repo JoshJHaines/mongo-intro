@@ -4,8 +4,21 @@ var express = require('express');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+var mongoose = require('mongoose');
+
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+
+mongoose.connect("mongodb://localhost:27017/express-mongodb-intro",{
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+})
+.then(() => {
+  console.log("MONGODB CONNECTED")
+})
+.catch(() => {
+  console.log(e)
+})
 
 var app = express();
 

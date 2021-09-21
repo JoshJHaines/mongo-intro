@@ -56,3 +56,22 @@ Edit your ejs files to display 'HTML' dynamically
 
 ### App.js
 1. Comment or delete out lines 3,12,13,14,20
+   
+## Add Mongo DB
+1. Under logger = morgan... add
+``` javascript
+var mongoose = require('mongoose');
+```
+2. Then under users Router add
+``` javascript
+mongoose.connect("mongodb://localhost:27017/express-mongodb-intro",{
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+})
+.then(() => {
+  console.log("MONGODB CONNECTED")
+})
+.catch(() => {
+  console.log(e)
+})
+```
