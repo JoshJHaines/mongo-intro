@@ -8,6 +8,7 @@ var mongoose = require('mongoose');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var animalRouter = require('./routes/animal/animalRouter')
 
 mongoose.connect("mongodb://localhost:27017/express-mongodb-intro",{
   useNewUrlParser: true,
@@ -34,6 +35,7 @@ app.use(cookieParser());
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
