@@ -2,11 +2,11 @@ const mongoose = require("mongoose");
 
 const recipeSchema = new mongoose.Schema(
 	{
-		mealType: {
+		recipeType: {
 			type: String,
 		},
-		recipeName: {
-			type: String,
+		recipePrice: {
+			type: Number,
 		}
 	},
 	{

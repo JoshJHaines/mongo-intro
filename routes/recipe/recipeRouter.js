@@ -17,7 +17,7 @@ router.get("/", function (req, res, next) {
 	});
 });
 
-router.post("/create-Recipe", function (req, res) {
+router.post("/create-recipe", function (req, res) {
 	//the naming convention is called payload
 	recipeController.createRecipe(req.body, function (err, savedRecipe) {
 		if (err) {

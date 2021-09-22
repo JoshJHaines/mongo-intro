@@ -13,8 +13,8 @@ module.exports = {
 
 	createRecipe: (body, callback) => {
 		const createdRecipe = new Recipe({
-			mealType: body.mealType,
-			recipeName: body.recipeName
+			recipeType: body.recipeType,
+			recipePrice: body.recipePrice
 		});
 
 		createdRecipe.save(function (err, savedRecipe) {
