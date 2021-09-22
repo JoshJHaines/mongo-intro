@@ -1,6 +1,18 @@
 const Animal = require("../model/Animal");
 
 module.exports = {
+
+    getAllAnimal: (body, callback) => {
+
+        Animal.find(body, function (err, foundAnimal){
+            if (err){
+                callback(err, null)
+            } else {
+                callback(null, foundAnimal)
+            }
+        })
+    },
+    
 	createAnimal: (body, callback) => {
 		const createdAnimal = new Animal({
 			animalType: body.animalType,
