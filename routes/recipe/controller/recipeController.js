@@ -13,7 +13,7 @@ module.exports = {
 
 	createRecipe: (body, callback) => {
 		const createdRecipe = new Recipe({
-			mealType: body.recipeType,
+			mealType: body.mealType,
 			recipeName: body.recipeName
 		});
 
