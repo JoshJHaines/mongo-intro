@@ -43,8 +43,8 @@ router.delete("/delete-animal-by-id/:id", function (req, res) {
   });
 });
 
-router.put("update-animal-by-id/id", function (req, res){
-  animalController.updateAnimalById(
+router.put("/update-animal-by-id/:id", function (req, res){
+  animalController.updatedAnimalById(
     req.params.id,
     req.body,
     function (err, updatedAnimal) {
